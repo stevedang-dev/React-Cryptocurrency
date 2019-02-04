@@ -1,14 +1,17 @@
 import React from 'react';
-
-// const App = () => {
-//     return <h1>React Coin</h1>
-// }
+import Header from './common/Header';
 
 class App extends React.Component {
     render() {
-        return <div>
-                    <h1>Yo!!</h1>
-                </div>
+        const title = 'React Coin';
+
+        return (
+            <div>
+                <Header />
+                <h1>{title}</h1>
+                <p>Up to date crypto currencies financial data.</p>
+            </div>
+        );
     }
 }
 
